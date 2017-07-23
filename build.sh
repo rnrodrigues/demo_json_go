@@ -1,3 +1,1 @@
-#!/bin/bash
-CGO_ENABLED=O GOOS=linux go build -a -installsuffix cgo -o app app.go
-
+env GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -a --installsuffix cgo --ldflags="-s" -o server
