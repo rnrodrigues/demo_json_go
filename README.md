@@ -1,18 +1,23 @@
-## Go Demo API
+## Go Demo API ##
 
-A tiny demo writted in GO that show how to use JSON responses in an API.
+A tiny demo written in GO that show how to use JSON responses in an API.
 
 
-### Usage
+### Usage ###
 
 Clone this repo:
 ```
 git clone https://github.com/rnrodrigues/demo_json_go.git
 ```
 
-Run command to compile:
+Run command on terminal to compile:
 ```
 CGO_ENABLED=0 GOOS=linux go build -a --installsuffix cgo --ldflags="-s" -o server
+```
+
+or run shell script:
+```
+sh build.sh
 ```
 
 Run commands below to build and run docker image:
